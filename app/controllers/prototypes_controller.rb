@@ -19,15 +19,14 @@ class PrototypesController < ApplicationController
       render :new
     end
   end
-  
+
   def show
     @comment = Comment.new
     @comments = @prototype.comments
   end
-  
+
   def edit
   end
- 
 
   def update
     if @prototype.update(prototype_params)
